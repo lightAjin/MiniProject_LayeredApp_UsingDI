@@ -18,6 +18,11 @@ public class EmployeeServiceImpl implements IEmployeeService {
 		
 		List<Employee> list=dao.getEmployeesByDesg(desg1, desg2, desg3);
 		
+		//calculate Gross Sal and Net Sal
+		list.forEach(emp->{
+			emp.setGrossSalary(emp.getSalary()+(emp.getSalary()*0.5));
+		});
+		
 		return list;
 	}
 	
