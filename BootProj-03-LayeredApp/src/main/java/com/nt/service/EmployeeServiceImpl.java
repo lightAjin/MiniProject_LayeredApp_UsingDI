@@ -20,7 +20,7 @@ public class EmployeeServiceImpl implements IEmployeeService {
 		
 		//calculate Gross Sal and Net Sal
 		list.forEach(emp->{
-			emp.setGrossSalary(emp.getSalary()+(emp.getSalary()*0.5));
+			emp.setGrossSalary(emp.getSalary()+(emp.getSalary()*0.5)); 
 		});
 		
 		return list;
