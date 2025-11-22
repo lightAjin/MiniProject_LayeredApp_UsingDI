@@ -14,6 +14,7 @@ import com.nt.model.Employee;
 public class BootProj03LayeredAppApplication {
 
 	public static void main(String[] args) {
+		System.out.print("----------------------------EMPLOYEE DETAILS----------------------------");
 		//get IOC container
 	 try(ConfigurableApplicationContext ctx=SpringApplication.run(BootProj03LayeredAppApplication.class, args);
 			 Scanner sc=new Scanner(System.in);){
